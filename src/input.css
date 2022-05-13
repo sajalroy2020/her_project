@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    @apply flex flex-wrap -mx-4
+}
+.custom-banner{
+    background-image: url('../src/assets/image/home-one-images/banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-bg-1{
+    background-image: url('../src/assets/image/home-one-images/cloth.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-font{
+    font-family: 'Oswald', sans-serif;
+}
+
+.custom-font-2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.product-banner{
+    background-image: url('../src/assets/image/product-img/product-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active {
+    border-bottom: 2px solid #52BBDC;
+}
+
+
+.slide-info{
+    animation: fadeEffect 1.3s;
+}
+
+@keyframes fadeEffect {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.hidden-text{
+    display: none;
+}

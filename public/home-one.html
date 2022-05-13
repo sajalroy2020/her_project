@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/assets/icon/css/all.min.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body class="custom-font-2">
+    <!-- Navbar Start -->
+    <div class="py-8 sticky top-0 z-50 nav duration-300">
+        <div class="container mx-auto px-4">
+            <div class="row">
+                
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4 flex items-center justify-start">
+                    <div>
+                        <img class="lg:hidden flex transform translate-y-6 sm:translate-y-4 md:translate-y-0 cursor-pointer menu" src="../src/assets/image/home-one-Icon/menu.svg" alt="">
+                        <ul class="font-bold flex items-center justify-start space-x-6">
+                            <li class="relative lg:flex hidden items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                                <a href="javascript:;">Home</a>
+                                <i class="fa fa-caret-down"></i>
+                                <span class="h-4 w-9 absolute -top-5 right-0 bg-blue-500 text-xs flex items-center justify-center text-white p-2">
+                                    <p>New</p>
+                                </span>
+                            </li>
+                            <li class="relative lg:flex hidden items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                                <a href="javascript:;">Shop</a>
+                                <i class="fa fa-caret-down"></i>
+                                <span class="h-4 w-9 absolute -top-5 right-0 bg-green-500 text-xs flex items-center justify-center text-white p-2">
+                                    <p>Sales</p>
+                                </span>
+                            </li>
+                            <li class="lg:flex hidden items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                                <a href="javascript:;">Blogs</a>
+                                <i class="fa fa-caret-down"></i>
+                            </li>
+                            <li class="lg:flex hidden items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                                <a href="javascript:;">Pages</a>
+                                <i class="fa fa-caret-down"></i>
+                            </li>
+                            <li class="lg:flex hidden items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                                <a href="javascript:;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4 flex lg:justify-center justify-end items-center">
+                    <div>
+                        <img src="../src/assets/image/home-one-images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full px-4 lg:flex hidden justify-end items-center">
+                    <div>
+                        <ul class="flex items-center space-x-5">
+                            <li class="cursor-pointer"><img src="../src/assets/image/home-one-Icon/search.svg" alt=""></li>
+                            <li class="cursor-pointer"><img src="../src/assets/image/home-one-Icon/user.svg" alt=""></li>
+                            <li class="cursor-pointer relative">
+                                <img src="../src/assets/image/home-one-Icon/shop.svg" alt="">
+                                <span class="w-3.5 h-4 bg-blue-400 rounded-full absolute top-0 -right-2.5 flex items-center justify-center text-white text-xs">
+                                    <p>0</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="font-bold space-y-4 fixed top-0 bg-gray-300 h-screen md:w-80 w-60 p-4 -ml-80 sidebar duration-500 z-50 lg:hidden">
+                <li class="pb-4 border-b flex justify-end "><button class="hover:text-green-500 duration-300 close" type="">X   Close</button></li>
+                <li class="relative pt-4 flex justify-between items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                    <a href="javascript:;">Home</a>
+                    <i class="fa fa-caret-down"></i>
+                    <span class="h-4 w-9 absolute -top-0 letf-0 bg-blue-500 text-xs flex items-center justify-center text-white p-2">
+                        <p>New</p>
+                    </span>
+                </li>
+                <li class="relative flex justify-between items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                    <a href="javascript:;">Shop</a>
+                    <i class="fa fa-caret-down"></i>
+                    <span class="h-4 w-9 absolute -top-3 letf-0 bg-green-500 text-xs flex items-center justify-center text-white p-2">
+                        <p>Sales</p>
+                    </span>
+                </li>
+                <li class="flex justify-between items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                    <a href="javascript:;">Blogs</a>
+                    <i class="fa fa-caret-down"></i>
+                </li>
+                <li class="flex justify-between items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                    <a href="javascript:;">Pages</a>
+                    <i class="fa fa-caret-down"></i>
+                </li>
+                <li class="flex justify-between items-center cursor-pointer space-x-1 hover:text-[#52BBDC] duration-300">
+                    <a href="javascript:;">Contact</a>
+                </li>
+
+                <ul class="flex items-center space-x-3 pt-7 justify-center">
+                    <li class="cursor-pointer"><img src="../src/assets/image/home-one-Icon/search.svg" alt=""></li>
+                <li class="cursor-pointer"><img src="../src/assets/image/home-one-Icon/user.svg" alt=""></li>
+                <li class="cursor-pointer relative ">
+                    <img src="../src/assets/image/home-one-Icon/shop.svg" alt="">
+                    <span class="w-3.5 h-4 bg-blue-400 rounded-full absolute top-0 -right-2.5 flex items-center justify-center text-white text-xs">
+                        <p>0</p>
+                    </span>
+                 </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Banner Section Start -->
+    <div class="product-banner">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class=" w-full px-4">
+                    <div class="text-lg text-white justify-center flex flex-wrap py-32">
+                        <a href="javascript:;">Home </a>
+                        <a class="px-1" href="javascript:;"> / Hot Products / </a>
+                        <a href="javascript:;"> Suede Trainers </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Add TO CART Section Start -->
+    <div class="md:pt-20 pt-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="md:w-1/2 w-full px-4">
+                    <div class="tab flex flex-wrap md:justify-start justify-center">
+                       
+                        <div class="w-full tab-text-1">
+                            <img class="w-full" src="../src/assets/image/product-img/shoes.svg" alt="">
+                        </div>
+                        
+                        <div class="w-full tab-text-1 hidden-text">
+                            <img class="w-full" src="../src/assets/image/product-img/shoes-2.svg" alt="">  
+                        </div>
+
+                        <div class="gap-7 md:pt-8 pt-1">
+                            <button class="tab-btn-1">
+                                <img class="md:w-40 w-20 md:h-52 h-40" src="../src/assets/image/product-img/shoes.svg" alt="">
+                            </button>
+                            <button class="tab-btn-1">
+                                <img class="md:w-40 w-20 md:h-52 h-40" src="../src/assets/image/product-img/shoes-2.svg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full px-4 pt-10 md:pt-0">
+                    <h2 class="md:text-3xl text-2xl font-bold text-center md:text-left">Suede Trainers</h2>
+                    <div class="flex flex-wrap items-center pt-1 justify-center md:justify-start">
+                        <i class="text-[#F2970E] text-base	fa fa-star"></i>
+                        <i class="text-[#F2970E] text-base	fa fa-star"></i>
+                        <i class="text-[#F2970E] text-base	fa fa-star"></i>
+                        <i class="text-[#F2970E] text-base	fa fa-star"></i>
+                        <i class="text-[#F2970E] text-base	fa fa-star"></i>
+                        <p class="text-sm font-light text-[#413F3F] pl-2">1 review</p>
+                    </div>
+                    <div class="flex justify-center md:justify-start py-3">
+                        <h5 class="font-normal text-3xl text-[#52BBDC]">$370.0 </h5>
+                        <p class="font-normal text-xs text-black pt-3 pl-2"> <strike>$420.00</strike></p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start">
+                        <h6 class="font-xs font-normal w-20">Vendor :</h6>
+                        <p class="text-sm font-light text-[#413F3F]">Butterfly</p>
+                    </div>
+                    <div class="flex flex-wrap items-center py-2 justify-center md:justify-start">
+                        <h6 class="font-xs font-normal w-20">Type :</h6>
+                        <p class="text-sm font-light text-[#413F3F]">Shoes</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start">
+                        <h6 class="font-xs font-normal w-20">Sku :</h6>
+                        <p class="text-sm font-light text-[#413F3F]">NOVA001</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 py-8 text-[#5FE0B2]">
+                        <i class="text-base fa fa-check"></i>
+                        <p class="text-sm font-semibold	">In Stock</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start md:gap-2 gap-5 pt-6">
+                        <div class="font-semibold text-sm text-[#989494] border border-black py-4 md:px-8 px-20">
+                            <span class="cursor-pointer	pr-3">-</span>
+                                <span>1</span>
+                            <span class="cursor-pointer	pl-3">+</span>
+                        </div>
+                        <button class="bg-[#2B2B2B] font-bold text-sm py-4 md:px-14 px-20 text-white">Add TO CART</button>
+                        <button class="bg-[#2B2B2B] font-bold text-sm py-4 md:px-14 px-20 text-white">BY IT NOW</button>
+                    </div>
+                    <div class="flex flex-wrap justify-items-center justify-center md:justify-start pt-6">
+                        <i class="text-xs mr-1 fas fa-balance-scale"></i>
+                        <p class="text-xs pr-3 font-semibold">COMpARE</p>
+                        <img class="mr-1" src="../src/assets/image/product-img/love.svg" alt="">
+                        <p class="text-xs pr-3 font-semibold">Add to Wishlist</p>
+                        <img src="../src/assets/image/product-img/pass.svg" alt="">
+                        <p class="text-xs pl-1 font-semibold">Size guide</p>
+                    </div>
+                    <div class="flex flex-wrap justify-items-center justify-center md:justify-start pt-11 gap-4">
+                        <a href="javascript:;">
+                            <img src="../src/assets/image/product-img/pass-through.svg" alt="">
+                        </a>
+                        <a href="javascript;:">
+                            <img src="../src/assets/image/product-img/facebook.svg" alt="">
+                        </a>
+                        <a href="javascript;:">
+                            <img src="../src/assets/image/product-img/twitter.svg" alt="">
+                        </a>
+                        <a href="javascript;:">
+                            <img src="../src/assets/image/product-img/pinterest.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-6">
+                        <button class="bg-[#2B2B2B] font-semibold text-xs py-2 md:px-32 px-14 text-white flex items-center gap-2"><img src="../src/assets/image/product-img/car.svg" alt="">Spend $200.00 for FREE SHIPPING</button>
+                    </div>
+                    <p class="pt-4 md:text-left text-center text-xs font-normal text-[#7B7979]">Currently there are <span class="text-white px-1 bg-[#52BBDC]">14</span> peoples are currently looking at this product</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- Add TO CART Section End -->
+
+    <!-- Description Section Start -->
+        <div class="pt-24">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4">
+                        <div class="custom-font flex flex-wrap text-center justify-center border-b border-[#D0C4C4]">
+                            <button class="sm:text-2xl text-xl font-semibold tab-btn pb-5 active">Description</button>
+                            <button class="sm:text-2xl text-xl font-semibold tab-btn pb-5 mx-7">Shipping </button>
+                            <button class="sm:text-2xl text-xl font-semibold tab-btn pb-5">Review</button>
+                        </div>
+                        
+                        <div class="tab-text pt-6 slide-info">
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	">
+                                <i>
+                                 Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                               </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	py-9">
+                                <i>
+                                   Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8">
+                                <i>
+                                    Donec fringilla sapien sed elit luctus, eget mattis dolor efficitur. Ut id libero nulla. Morbi aliquam tortor massa, in aliquet eros molestie in. Quisque eleifend diam leo, a bibendum mi      eleifend eget.
+                                </i>
+                            </p>
+                        </div>
+                        
+                        <div class="hidden-text tab-text py-4 slide-info">
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	">
+                                <i>
+                                 Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                               </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	py-9">
+                                <i>
+                                   Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8">
+                                <i>
+                                    Donec fringilla sapien sed elit luctus, eget mattis dolor efficitur. Ut id libero nulla. Morbi aliquam tortor massa, in aliquet eros molestie in. Quisque eleifend diam leo, a bibendum mi      eleifend eget.
+                                </i>
+                            </p>
+                        </div>
+                        
+                        <div class="hidden-text tab-text py-4 slide-info">
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	">
+                                <i>
+                                 Sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                               </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8	py-9">
+                                <i>
+                                   Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </i>
+                            </p>
+                            <p class="text-sm font-normal text-[#2B2B2B] leading-8">
+                                <i>
+                                    Donec fringilla sapien sed elit luctus, eget mattis dolor efficitur. Ut id libero nulla. Morbi aliquam tortor massa, in aliquet eros molestie in. Quisque eleifend diam leo, a bibendum mi      eleifend eget.
+                                </i>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>  
+        </div>     
+
+    <!-- Description Section End -->
+
+
+    <!-- Related product Section Start -->
+    <!-- <div class="pt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex">
+                <div class="w-full px-4">
+                    <h2 class="md:text-5xl text-3xl text-center font-medium custom-font">Related product</h2>
+                </div>
+            </div>
+            <div class="overflow-hidden pt-7 md:pb-24 pb-10">
+                <div class="flex main-slider duration-300 relative">
+
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-img.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white  cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-5.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white  cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-4.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white  cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-3.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-5.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="lg:min-w-[25%] md:min-w-[50%] min-w-[100%] slider px-4">
+                        <div class=" text-center relative group">
+                            <a href="">
+                                <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-3.svg" alt="">
+                                <p class="pt-4">Slip senakers</p>
+                                <p class=" text-blue-400 font-bold">$ 199.00</p>
+                            </a>
+                            <div class=" absolute bottom-20 transform translate-x-1/2 right-1/2 group-hover:opacity-100 opacity-0 duration-300">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                          </svg>
+                                    </div>
+                                    <div class="w-10 h-10 bg-white cursor-pointer rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                          </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+            </div>
+
+
+               <div style="text-align:center">
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+                <span class="dot h-4 w-4 rounded-full border-[#7b7979] border cursor-pointer inline-block"></span> 
+              </div>
+
+
+               <div class="flex">
+                    <div class="w-full px-4 text-center pt-7 pb-20">
+                        <a href="javascript;:">
+                            <h6 class="font-normal text-base flex items-center justify-center"><i class="fas fa-long-arrow-alt-left w-6"></i> Back to accessorise</h6>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Related product Section End -->
+
+
+
+
+
+
+    <div class="px-4 mx-auto container">
+        <div class="overflow-hidden pt-20">
+            <div class="flex -mx-4 px-4 main-img-slide relative">
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-img.svg" alt="">
+                </div>
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-3.svg" alt="">
+                </div>
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-5.svg" alt="">
+                </div>
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-3.svg" alt="">
+                </div>
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-4.svg" alt="">
+                </div>
+                <div class="md:min-w-[50%] lg:min-w-[25%] min-w-[100%] img-slide px-2">
+                    <img class="w-full transform hover:scale-105 duration-300" src="../src/assets/image/product-img/style-man-5.svg" alt="">
+                </div>
+            </div>
+        </div>
+       </div>
+    
+        <div class="container mx-auto px-4 pb-20">
+            <div class="flex pt-10 gap-2 justify-center">
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot hidden"></div>
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot hidden"></div>
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot hidden"></div>
+    
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot"></div>
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot"></div>
+                <div class="border border-gray-800 p-1 rounded cursor-pointer dot"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Footer Section Start -->
+    <div class="bg-[#F5F5F5] md:py-24 py-16">
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <div>
+                        <h3 class=" text-xl font-semibold">About Us</h3>
+                        <ul class="pt-5 space-y-1 text-gray-500">
+                            <li><a href="javascript:;">123 South Main Street, Los Angeles</a></li>
+                            <li><a href="javascript:;">United States</a></li>
+                            <li><a href="javascript:;"><span class=" text-gray-600 font-medium">Phone:</span> +0180 808 880</a></li>
+                            <li><a href="javascript:;"><span class=" text-gray-600 font-medium">Email:</span> rubiktheme@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <div>
+                        <h3 class=" text-xl font-semibold">Information</h3>
+                        <ul class="pt-5 space-y-1 text-gray-500">
+                            <li><a href="javascript:;">Search</a></li>
+                            <li><a href="javascript:;">Terms & Conditions</a></li>
+                            <li><a href="javascript:;">Privacy Policy</a></li>
+                            <li><a href="javascript:;">Support</a></li>
+                            <li><a href="javascript:;">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 pt-7 lg:pt-0">
+                    <div>
+                        <h3 class=" text-xl font-semibold">About Us</h3>
+                        <ul class="pt-5 space-y-1 text-gray-500">
+                            <li><a href="javascript:;">Our Company</a></li>
+                            <li><a href="javascript:;">Our History</a></li>
+                            <li><a href="javascript:;">Contact Us</a></li>
+                            <li><a href="javascript:;">Blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 pt-7 lg:pt-0">
+                    <div>
+                        <h3 class=" text-xl font-semibold">Follow Us</h3>
+                        <ul class="flex space-x-4 pt-8">
+                            <li>
+                                <a class="rounded-md duration-300 hover:bg-gray-400 hover:text-white drop-shadow-xl text-black w-9 h-9 flex items-center justify-center bg-gray-100" href="javasript:;">
+                                <i class="fab  fa-facebook-f"></i>
+                            </a>
+                        </li>
+                            <li>
+                                <a class="rounded-md duration-300 drop-shadow-xl hover:bg-gray-400 hover:text-white text-black w-9 h-9 flex items-center justify-center bg-gray-100" href="javasript:;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                            <li>
+                                <a class="rounded-md duration-300 drop-shadow-xl hover:bg-gray-400 hover:text-white text-black w-9 h-9 flex items-center justify-center bg-gray-100" href="javasript:;">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                            <li>
+                                <a class="rounded-md drop-shadow-xl hover:bg-gray-400 hover:text-white text-black w-9 h-9 flex items-center justify-center bg-gray-100" href="javasript:;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+    <!-- Copyright Section Start -->
+    <div class="py-5">
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div class="md:w-1/2 w-full px-4 text-center md:text-left">
+                    <div>
+                        <p>© 2022, landingpage-demo. Powered by Shopify</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full px-4 flex justify-center pt-3 md:pt-0">
+                    <div>
+                        <img src="../src/assets/image/home-one-images/payment.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="bg-red-300 px-4 py-2 rounded-full fixed right-6 bottom-10 scrollBtn hidden" type=""><i class="fa fa-angle-up"></i></button>
+    </div>
+    <!-- Copyright Section End -->
+    <script src="../src/assets/js/home-one.js"></script>
+
+
+    <script>
+
+        let dot = document.querySelectorAll('.dot');
+        const img = document.querySelector('.main-img-slide');
+        let count = 3;
+        let input = 25;
+        let ipadView = window.matchMedia("(max-width: 1024px)")
+        let mobileView = window.matchMedia("(max-width: 768px)")
+        img.style.left = '0%';
+
+        if(ipadView.matches){
+            count = 1;
+            input = 50;
+        }
+        if(mobileView.matches){
+            count = 0;
+            input = 100;
+        }
+
+            for(let i = 0; i < dot.length; i++){
+                if(i>=count){
+                    dot[i].classList.remove('hidden')
+                    dot[i].addEventListener('click', function(){
+                        console.log(i);
+                        img.style.left = '-' + input*(i-count) + '%';
+                    })
+                }else{
+                    dot[i].classList.add('hidden')
+                    dot[i].addEventListener('click', function(){
+                        img.style.left = '0%';
+                    })
+                }
+            }
+
+
+    </script>
+
+
+
+
+    <script>
+        // slider
+
+    //     let dot = document.querySelectorAll('.dot');
+    //     const mainSlider =document.querySelector('.main-slider');
+    //     let multiImagesSlider = ()=>{
+    //         let moveper = 25
+    //     let count = 4
+    //     let ipadView = window.matchMedia("(max-width: 1024px)")
+    //     let mobileView = window.matchMedia("(max-width: 768px)")
+
+    //     if(ipadView.matches){
+    //         moveper = 50
+    //         count = 2
+    //     }
+
+    //     if(mobileView.matches){
+    //         moveper = 100
+    //         count = 1
+    //     }
+    //     function activeFunc(){
+    //         for(let i = 0; i<dot.length; i++){
+    //         if(i < count-1 ){
+    //             dot[i].style.display = 'none';
+    //         }else{
+
+               
+
+    //             dot[i].style.display = 'inline-block';
+    //             if(i == count-1){
+    //                 dot[i].style.background = '#7b7979'
+    //             }else{
+    //                 dot[i].style.background = 'transparent'
+    //             }
+    //             dot[i].addEventListener('click', function(e){
+    //                 for(let j =0 ; j<dot.length; j++){
+    //                     dot[j].style.background = 'transparent'
+    //                 }
+    //                 dot[i].style.background = '#7b7979';
+    //             })
+
+    //         }
+    //     }
+    // }
+    // activeFunc()
+    //     window.addEventListener('resize',function(){
+    //         console.log(count);
+    //         mainSlider.style.left = '0%'
+    //         for(let i = 0; i<dot.length; i++){
+    //         if(i < count-1 ){
+    //             dot[i].style.display = 'none';
+    //         }else{
+    //             dot[i].style.display = 'inline-block';
+    //             if(i == count-1){
+    //                 dot[i].style.background = '#7b7979'
+    //             }else{
+    //                 dot[i].style.background = 'transparent'
+    //             }
+    //             dot[i].addEventListener('click', function(e){
+    //                 for(let j =0 ; j<dot.length; j++){
+    //                     dot[j].style.background = 'transparent'
+    //                 }
+    //                 dot[i].style.background = '#7b7979';
+    //             })
+
+    //         }
+    //     }
+    //     })
+    //     mainSlider.style.left = '0%'
+    //     for(let i= 0; i<dot.length; i++){
+    //         dot[i].addEventListener('click',function(){
+    //             if(i >= count){
+    //             mainSlider.style.left = '-' + moveper*(i - (count-1)) + '%'
+    //         }
+    //         else{
+    //             mainSlider.style.left = '0%'
+    //         }
+    //         })
+            
+    //     }
+    //     }
+    //     multiImagesSlider()
+    //     window.addEventListener('resize',function(){
+    //         multiImagesSlider()
+    //     })
+
+    </script>
+    
+
+    <script>
+
+        // tab
+        let tabBtn_1 = document.querySelectorAll('.tab-btn-1');
+        let tabText_1 = document.querySelectorAll('.tab-text-1');
+
+        let tabBtn = document.querySelectorAll('.tab-btn');
+        let tabText = document.querySelectorAll('.tab-text');
+
+        for(let i = 0; i < tabBtn.length; i++){
+            tabBtn[i].addEventListener('click', function(){
+                for(let j = 0; j < tabText.length; j++){
+                    tabText[j].classList.add('hidden-text');
+                    tabBtn[j].classList.remove('active');
+                }
+                tabText[i].classList.remove('hidden-text');
+                tabBtn[i].classList.add('active');
+            })
+        }
+
+
+        for(let i = 0; i < tabBtn_1.length; i++){
+            tabBtn_1[i].addEventListener('click', function(){
+                for(let j = 0; j < tabText_1.length; j++){
+                    tabText_1[j].classList.add('hidden-text');
+                }
+                tabText_1[i].classList.remove('hidden-text');
+            })
+        }
+
+    </script>
+
+</body>
+</html>
